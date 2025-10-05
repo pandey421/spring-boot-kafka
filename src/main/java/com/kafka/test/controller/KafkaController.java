@@ -18,7 +18,7 @@ public class KafkaController {
 
     @GetMapping("/publish")
     public String publishMessage(@RequestParam("message") String message) {
-        kafkaProducerService.sendMessage("my-topic", message);
+        kafkaProducerService.sendMessage("hello-topic", message);
         return "Message published";
     }
 

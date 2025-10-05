@@ -56,6 +56,8 @@ Kafka server will now be running.[4][2]
 Open another command prompt, change to `C:\kafka\bin\windows`, and run:
 ```
 kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic my-topic
 ```
 This command creates a topic named `test`.[3][1]
 
@@ -64,6 +66,7 @@ This command creates a topic named `test`.[3][1]
 Open another command prompt, change to `C:\kafka\bin\windows`, and run:
 ```
 kafka-console-producer.bat --broker-list localhost:9092 --topic test
+
 ```
 You can now type messages in this window.[1][3]
 
